@@ -102,9 +102,18 @@
                 margin-bottom: 2rem;
                 text-transform: uppercase;
             }
+            .container_second{
+                display: block;
+                padding: 40px 30px 40px 86px;
+            }
+            .second_landing{
+                display: inline-block;
+                padding: 15px 5px 5px 5px;
+            }
             .career_path{
                 display: inline-block;
-                padding: 10px 0px 10px 86px;
+                padding: 0px 0px 0px 0px;
+                vertical-align: top;
             }
             .career_path a{
                 text-decoration: none;
@@ -119,7 +128,8 @@
                 object-fit: cover;
                 box-shadow: 0 12px 13px -6px rgb(0 0 0 / 25%);
                 display: block;
-                max-width: 250px;
+                max-width: 300px;
+                max-height: 160px;
             }
             .path_title{
                 font-style: normal;
@@ -129,7 +139,67 @@
                 text-align: center;
                 color: #697589;
                 display: block;
+                max-width: 300px;
             }
+            h5{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #3fc5ff;
+                margin: 0px 0px 15px 0px;
+            }
+            h4{
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 29px;
+                color: #fff;
+                margin: 0px;
+            }
+            .container_third{
+                display: block;
+                padding: 10px 0px 10px 86px;
+            }
+            .how_we_teach{
+                background: #1859ff;
+                padding: 86px 0px 86px 0px;
+                display: inline-block;
+            }
+            .container_third p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                color: #d6d6d6;
+                padding: 0px 55px 0px 0px;
+            }
+            .how_we_teach_contain{
+                display: inline-block;
+                padding: 10px 14px 10px 0px;
+                vertical-align: top;
+            }
+            .how_we_img{
+                background: #000;
+                width: 100%;
+                height: 400px;
+                border-radius: 5px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                box-shadow: 0 12px 13px -6px rgb(0 0 0 / 25%);
+                display: block;
+                max-width: 300px;
+            }
+            .how_we_title{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #e3e3e3;
+                padding-top: 10px;
+                display: block;
+                max-width: 300px;
+            }
+
       </style>
     </head>
     <body>
@@ -250,49 +320,47 @@
                 </div>
             </div>
         </section>
-        <section id="how_we_teach" class="">
+        <section id="how_we_teach" class="how_we_teach">
             <div class="container_third">
                 <h5>How We Teach</h5>
                 <h4>The 4 Steps to Make You Succeed!</h4>
-                <p>Discover How Hundreds of Students Have Learned Enough Coding Skills to Build Impressive Programs, Quit Their Dead- end Jobs, Spark High-Paying Tech Careers, and Double Their Income…</p>
-                <div class="">
-                    <div class="">
-                        <div class="">
-                            <span class="" style="color: transparent; display: inline-block;">
-                                <img alt="image.alt" src="" class="step-img">
+                <p>Discover how hundreds of students have learned enough coding skills to build impressive programs, quit their dead-end jobs, spark <strong>high-paying</strong> tech careers, and <strong>double</strong> their income…</p>
+
+                <div class="second_landing">
+                    <div class="how_we_teach_contain">
+                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="Frontend Developer" src="pexels-photo-3861964.jpeg" class="how_we_img"></a>
                             </span>
-                            <span class="">Build Real Projects</span>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <span class="" style="color: transparent; display: inline-block;">
-                                <img alt="image.alt" src="" class="step-img">
-                            </span>
-                            <span class="">Learn How To Make Income While You Continue To Learn
-                            </span>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <span class="" style="color: transparent; display: inline-block;">
-                                <img alt="image.alt" src="" class="step-img">
-                            </span>
-                            <span class="">Build A Solid Portfolio Like A Pro
-                            </span>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <span class="" style="color: transparent; display: inline-block;">
-                                <img alt="image.alt" src="" class="step-img">
-                            </span>
-                            <span class="">Land The Dream Job and Have Side Income!
-                            </span>
-                        </div>
+                            <span class="how_we_title">Build Real Projects</span>
                     </div>
                 </div>
+                <div class="second_landing">
+                    <div class="how_we_teach_contain">
+                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="Backend Developer" src="pexels-photo-572056.jpeg" class="how_we_img">
+                            </span>
+                            <span class="how_we_title">Learn How To Make Income While You Continue To Learn</span>
+                    </div>
+                </div>
+                <div class="second_landing">
+                    <div class="how_we_teach_contain">
+                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="Full Stack Developer" src="pexels-photo-326514.jpeg" class="how_we_img"></a>
+                            </span>
+                            <span class="how_we_title">Build A Solid Portfolio Like A Pro</span>
+                    </div>
+                </div>
+                <div class="second_landing">
+                    <div class="how_we_teach_contain"
+                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="React Developer" src="pexels-photo-941693.jpeg" class="how_we_img"></a>
+                            </span>
+                            <span class="how_we_title">Land The Dream Job and Have Side Income!</span>
+                    </div>
+                </div>
+
             </div>
+
         </section>
         <section id="why_choose_us" class="">
             <div class=" container">
