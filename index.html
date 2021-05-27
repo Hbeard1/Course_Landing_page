@@ -40,7 +40,20 @@
                 color: #dc3545;
             }
             .navbar{
+
+            }
+            .navbar_container{
                 padding: 10px 86px 10px 86px;
+                background-color: #fff;
+                z-index: 9999;
+            }
+            .sticky {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                }
+            .sticky + .content {
+                padding-top: 60px;
             }
             h1{
                 font-size: 48px;
@@ -409,7 +422,7 @@
                 font-weight: 400;
                 font-size: 16px;
                 color: #697589;
-                margin: 0px;
+                margin: 30px;
             }
             .pricing_other a{
                 text-decoration: none;
@@ -418,14 +431,84 @@
             .pricing_other a:hover{
                 color: #dc3545;
             }
+            .footer_container{
+                display:block;
+                background: #010117;
+                padding: 2rem 0;
+
+            }
+            .footer_one{
+                font-size: 14px;
+                line-height: 20px;
+                display:inline-block;
+                color: #fff;
+                max-width: 300px;
+                padding-left: 90px;
+                vertical-align: top;
+            }
+            .footer_two{
+                font-size: 14px;
+                line-height: 20px;
+                display:inline-block;
+                color: #fff;
+                max-width: 300px;
+                padding-left: 90px;
+                vertical-align: top;
+            }
+            .footer_three{
+                font-size: 14px;
+                line-height: 20px;
+                display:inline-block;
+                color: #fff;
+                max-width: 300px;
+                padding-left: 90px;
+                vertical-align: top;
+            }
+            .footer_four{
+                font-size: 14px;
+                line-height: 20px;
+                display:inline-block;
+                color: #fff;
+                max-width: 300px;
+                padding-left: 90px;
+                vertical-align: top;
+            }
+            .footer_two a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .footer_two a:hover{
+                color: #dc3545;
+            }
+            .footer_three a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .footer_three a:hover{
+                color: #dc3545;
+            }
+            .footer_four a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .footer_four a:hover{
+                color: #dc3545;
+            }
+            .footer_title{
+                color: #1859FF;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 1rem;
+                display: block;
+            }
 
       </style>
     </head>
     <body>
         <header class="navbar">
-            <nav role="navigation">
+            <nav role="navigation" id="navbar" class="navbar_container">
                 <div id="logo" class="logo">
-                    <strong><a class="" href="/">Eddie Course</a></strong>
+                    <strong><a class="" href="/">CodingPhase</a></strong>
                 </div>
                 <div id="header_menu" class="header_menu">
                     <a class="" href="#">Reviews</a>
@@ -444,7 +527,7 @@
                     <div class="main_text">
                         <h1 class="title">Learn The Skills You Need<br/>To Become A Profitable<br />Developer</h1>
                         <p class="desc">We are the only platform that goes beyond just teaching you<br />how to get a job we focus on skills that are in high demand</br>but also allow you to make your own income independently<br /> online.</p>
-                        <a class="start_btn" href="#">Start Now</a>
+                        <a class="start_btn" href="#pricing">Start Now</a>
                     </div>
                     <div class="main_image">
                         <span class="" style="background-image:;background-size:;color:transparent;display:inline-block"><img alt="image.alt" src="money-vector.png"></span>
@@ -667,32 +750,45 @@
         </section>
         <footer class="">
             <div class=" container">
-                <div class=" row g-3">
-                    <div class=" col-md-3 ">
-                        <span class=" title">ABOUT US</span>
+                <div class="footer_container">
+                    <div class="footer_one">
+                        <span class="footer_title">ABOUT US</span>
                         <p class="">We are here to help you on journey on becoming a developer. Helping you get from zero experience to a hired developer.</p>
                     </div>
-                    <div class=" col-md-3">
-                        <span class=" title">IMPORTANT LINKS</span>
-                        <a class="" href="#">Timeline</a>
-                        <a class="" href="#">Terms of Service</a>
-                        <a class="" href="#">Privacy Policy</a>
-                        <a class="" href="#">Refund Policy</a>
+                    <div class="footer_two">
+                        <span class="footer_title">IMPORTANT LINKS</span>
+                        <a class="" href="#">Timeline</a><br />
+                        <a class="" href="#">Terms of Service</a><br />
+                        <a class="" href="#">Privacy Policy</a><br />
+                        <a class="" href="#">Refund Policy</a><br />
                         <a class="" href="#">Contact-Us</a>
                     </div>
-                    <div class="">
-                        <span class="">AFFILIATE PROGRAM</span>
-                        <a href="#" class="">Become an Affiliate</a>
+                    <div class="footer_three">
+                        <span class="footer_title">AFFILIATE PROGRAM</span>
+                        <a href="#" class="">Become an Affiliate</a><br />
                         <a href="#" class="">Affiliates Login</a>
                     </div>
-                    <div class="">
-                        <span class="">CONTACT US</span>
-                        <p class="">Office Address<br class="">44 Waterbury RD Suite 2D Prospect CT 06712<br class="">Email: <a href="mailto:#" class="">email@gmail.com</a>
+                    <div class="footer_four">
+                        <span class="footer_title">CONTACT US</span>
+                        <p class="">Office Address:<br class="">44 Waterbury RD Suite 2D<br />Prospect CT 06712<br class="">Email: <a href="mailto:codingphase@gmail.com" class="">codingphase@gmail.com</a>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="js/scripts.js"></script>
+        <script>
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                    }
+                else {
+                    navbar.classList.remove("sticky");
+                    }
+            }
+        </script>
     </body>
 </html>
