@@ -13,7 +13,7 @@
                 padding: 0px;
             }
             div {
-                display: inline;
+
             }
             .logo{
                 float: left;
@@ -39,6 +39,9 @@
             .header_menu a:hover{
                 color: #dc3545;
             }
+            .header_right{
+                padding-right: 101px;
+            }
             .navbar{
 
             }
@@ -61,12 +64,10 @@
                 color: #f0f0f0;
             }
             .title {
-                margin: 106px 0px 0px 15px;
-                padding: 30px 0px 20px 86px;
+
             }
             .desc {
-                margin: 0px 0px 30px 15px;
-                padding: 10px 0px 20px 86px;
+
                 font-style: italic;
                 font-weight: 500;
                 font-size: 16px;
@@ -74,21 +75,30 @@
                 color: #e7e7e7;
             }
             .main_landing{
-                padding: 10px 0px 10px 86px;
+                display: inline-block;
+                padding: 86px 30px 30px 101px;
             }
             .main_text{
+                vertical-align: top;
                 float: left;
+                width: calc(50% - 65px);
+            }
+            .main_image{
+
+                float: right;
+                vertical-align: top;
+                width: calc(50% - 65px);
+                padding-left: 65px;
             }
             .main_image img{
-                margin: 106px 0px 0px 0px;
-                padding: 20px 0px 20px 86px;
+                vertical-align: top;
             }
             section{
                 display: block;
             }
             .intro {
                 margin-top: 30px;
-                height: calc(100vh - 50px);
+                padding-bottom: 86px;
                 background:linear-gradient(180deg,#38028f,rgba(109,20,255,.69)),url(jumbo-bg.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -96,7 +106,7 @@
             .start_btn{
                 text-decoration: none;
                 color: #ffffff;
-                margin: 0px 0px 0px 100px;
+
                 padding: 10px 40px;
                 background: #292929;
                 border: 1px solid #fff;
@@ -231,7 +241,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: 1;
+                z-index: 2;
             }
             .border{
 
@@ -244,7 +254,7 @@
                 object-fit: cover;
                 top: -3rem;
                 left: 3rem;
-                z-index: 2;
+                z-index: 1;
             }
             .image{
                 display: inline-block;
@@ -517,7 +527,7 @@
                     <a class="" href="#">My Courses</a>
                     <a class="" href="#">Podcast</a>
                     <a class="" href="#">Contact Us</a>
-                    <a class="" href="#">Account</a>
+                    <a class="header_right" href="#">Account</a>
                 </div>
             </nav>
         </header>
@@ -525,8 +535,8 @@
             <div class="intro_container">
                 <div class="main_landing">
                     <div class="main_text">
-                        <h1 class="title">Learn The Skills You Need<br/>To Become A Profitable<br />Developer</h1>
-                        <p class="desc">We are the only platform that goes beyond just teaching you<br />how to get a job we focus on skills that are in high demand</br>but also allow you to make your own income independently<br /> online.</p>
+                        <h1 class="title">Learn The Skills You Need To Become A Profitable Developer</h1>
+                        <p class="desc">We are the only platform that goes beyond just teaching you how to get a job we focus on skills that are in high demand but also allow you to make your own income independently online.</p><br /><br />
                         <a class="start_btn" href="#pricing">Start Now</a>
                     </div>
                     <div class="main_image">
