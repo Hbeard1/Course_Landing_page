@@ -96,7 +96,7 @@
                 display: block;
             }
             .intro_container{
-                
+
             }
             .intro {
                 margin-top: 30px;
@@ -227,52 +227,63 @@
             .why_choose_us{
                 background: #010117;
                 display: block;
+                overflow: hidden;
+                padding: 10px 101px 0px 101px;
             }
             .Why_choose_container{
                 display: block;
-                padding: 60px 0px 86px 96px;
+                padding: 60px 0px 86px 0px;
             }
             svg{
                 width:100%;
             }
             .border_container{
-                width: 362px;
-                height: 480px;
+                vertical-align: top;
+                display: inline-block;
+                width: 30%;
+            }
+            .border{
+
+                position: relative;
+
+            }
+            .border::before{
+                content: '';
+                color: transparent;
+                display: inline-block;
                 border: 16px solid;
-                border-image-source: linear-gradient(34deg,#ff0303,#8000ff 61%);
+                border-image-source: linear-gradient( 34deg,#ff0303,#8000ff 61%);
                 border-image-slice: 1;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 2;
-            }
-            .border{
-
+                vertical-align: top;
+                width: 362px;
+                height: 480px;
             }
             .border img{
-                position: relative;
+                position: absolute;
                 width: 362px;
                 height: 480px;
                 -o-object-fit: cover;
                 object-fit: cover;
-                top: -3rem;
-                left: 3rem;
+                top: -2rem;
+                left: 4rem;
                 z-index: 1;
             }
             .image{
                 display: inline-block;
                 position: relative;
-                width: 362px;
-                height: 480px;
+                width: 100%;
                 margin-top: 100px;
             }
             .why_text_container{
-                display: inline-block;
-                width:500px;
-                margin-left: 250px;
-                padding-left: 300px;
-                margin-bottom: 50px;
                 color: #fff;
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                padding-left: 19%;
             }
             .why_text{
                 padding-bottom: 100px;
@@ -695,9 +706,9 @@
 
                 <div class="image">
                     <div class="border_container">
-                        <span class="border" style="color:transparent;display:inline-block">
+                        <div class="border" style="">
                             <img alt="image.alt" src="joe-highlight.png">
-                        </span>
+                        </div>
                     </div>
                     <div class="why_text_container">
                         <div class="why_text">
