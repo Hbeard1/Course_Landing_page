@@ -585,6 +585,7 @@
                     initial-value: 64deg;
                     inherits: false;
                 }
+
             .modal-body {
                 padding: 2px 16px;
             }
@@ -598,9 +599,82 @@
                 font-size: 10px;
                 color: white;
             }
-            .paypal_btn{
-                max-width: 200px;
+
+            .modal2 {
+                display: none;
+                position: fixed;
+                z-index: 2;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                -webkit-animation-name: fadeIn;
+                -webkit-animation-duration: 0.4s;
+                animation-name: fadeIn;
+                animation-duration: 0.4s
             }
+            .modal2-content {
+                position: fixed;
+                bottom: 0;
+                background-color: #fefefe;
+                width: 100%;
+                -webkit-animation-name: slideIn;
+                -webkit-animation-duration: 0.4s;
+                animation-name: slideIn;
+                animation-duration: 0.4s
+            }
+            .close2 {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close2:hover,
+            .close2:focus {
+                color: #dc3545;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .modal2-header {
+                padding: 2px 16px;
+                background-color: #010117;
+                color: white;
+                border-top: 5px solid;
+                border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 61%);
+                border-image-slice: 1;
+                --angle: 0deg;
+                animation: 4s rotate linear infinite;
+            }
+            @keyframes rotate {
+                to {
+                    --angle: 360deg;
+                    }
+                }
+            @property --angle {
+                syntax: '<angle>';
+                initial-value: 64deg;
+                inherits: false;
+            }
+
+            .modal2-body {
+                padding: 2px 16px;
+            }
+
+            .modal2-footer {
+                padding: 2px 16px;
+                background-color: #010117;
+                color: white;
+            }
+            .modal2-footer p{
+                font-size: 10px;
+                color: white;
+            }
+}}
 
             /* Add Animation */
             @-webkit-keyframes slideIn {
@@ -650,7 +724,7 @@
                         <a class="start_btn" href="#pricing">Start Now</a>
                     </div>
                     <div class="main_image">
-                        <span class="" style="background-image:;background-size:;color:transparent;display:inline-block"><img alt="image.alt" src="money-vector.png"></span>
+                        <span class="" style="background-image:;background-size:;color:transparent;display:inline-block"><img alt="image.alt" src="Image/money-vector.png"></span>
                     </div>
                 </div>
             </div>
@@ -663,8 +737,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="HTML email developer" src="html-email-thumb.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="HTML email developer" src="Image/html-email-thumb.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">HTML Email Developer</a></span>
 
@@ -673,8 +747,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Frontend Developer" src="frontend-thumb.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="Frontend Developer" src="Image/frontend-thumb.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Frontend Developer</a></span>
                         </a>
@@ -683,8 +757,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Backend Developer" src="backend-thumb.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="Backend Developer" src="Image/backend-thumb.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Backend Developer</a></span>
                         </a>
@@ -693,8 +767,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Full Stack Developer" src="fullstack-thumb.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="Full Stack Developer" src="Image/fullstack-thumb.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Full Stack Developer</a></span>
                         </a>
@@ -703,8 +777,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="React Developer" src="reactjs.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="React Developer" src="Image/reactjs.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">React Developer</a></span>
                         </a>
@@ -713,8 +787,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Shopify Theme Developer" src="shopify-thumb.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="Shopify Theme Developer" src="Image/shopify-thumb.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Shopify Theme Developer</a></span>
                         </a>
@@ -723,8 +797,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Shopify App Developer" src="shopify-thumb.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="Shopify App Developer" src="Image/shopify-thumb.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Shopify App Developer</a></span>
                         </a>
@@ -733,8 +807,8 @@
                 <div class="second_landing">
                     <div class="career_path"
                         <a href="#">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Entrepreneur Developer" src="entrepreneur.jpg" class="path_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <a href="#"><img alt="Entrepreneur Developer" src="Image/entrepreneur.jpg" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Entrepreneur Developer</a></span>
                         </a>
@@ -752,32 +826,32 @@
 
                 <div class="second_landing">
                     <div class="how_we_teach_contain">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="Frontend Developer" src="pexels-photo-3861964.jpeg" class="how_we_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="Frontend Developer" src="Image/pexels-photo-3861964.jpeg" class="how_we_img"></a>
                             </span>
                             <span class="how_we_title">Build Real Projects</span>
                     </div>
                 </div>
                 <div class="second_landing">
                     <div class="how_we_teach_contain">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="Backend Developer" src="pexels-photo-572056.jpeg" class="how_we_img">
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="Backend Developer" src="Image/pexels-photo-572056.jpeg" class="how_we_img">
                             </span>
                             <span class="how_we_title">Learn How To Make Income While You Continue To Learn</span>
                     </div>
                 </div>
                 <div class="second_landing">
                     <div class="how_we_teach_contain">
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="Full Stack Developer" src="pexels-photo-326514.jpeg" class="how_we_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="Full Stack Developer" src="Image/pexels-photo-326514.jpeg" class="how_we_img"></a>
                             </span>
                             <span class="how_we_title">Build A Solid Portfolio Like A Pro</span>
                     </div>
                 </div>
                 <div class="second_landing">
                     <div class="how_we_teach_contain"
-                            <span class=" lazy-load-image-background blur lazy-load-image-loaded" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="React Developer" src="pexels-photo-941693.jpeg" class="how_we_img"></a>
+                            <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
+                                <img alt="React Developer" src="Image/pexels-photo-941693.jpeg" class="how_we_img"></a>
                             </span>
                             <span class="how_we_title">Land The Dream Job and Have Side Income!</span>
                     </div>
@@ -803,7 +877,7 @@
                 <div class="image">
                     <div class="border_container">
                         <div class="border" style="">
-                            <img alt="image.alt" src="joe-highlight.png">
+                            <img alt="image.alt" src="Image/joe-highlight.png">
                         </div>
                     </div>
                     <div class="why_text_container">
@@ -819,13 +893,13 @@
                             <center><span class="hired">WHO HIRED OUR STUDENTS</span></center>
                             <center><div class="why_image_container">
                                 <span class="" style="color: transparent; display: inline-block;">
-                                    <img alt="image.alt" src="fedex.png">
+                                    <img alt="image.alt" src="Image/fedex.png">
                                 </span>
                                 <span class="" style="color: transparent; display: inline-block;">
-                                    <img alt="image.alt" src="nasa.png">
+                                    <img alt="image.alt" src="Image/nasa.png">
                                 </span>
                                 <span class="" style="color: transparent; display: inline-block;">
-                                    <img alt="image.alt" src="paypal.png">
+                                    <img alt="image.alt" src="Image/paypal.png">
                                 </span>
                             </div></center>
                         </div>
@@ -888,15 +962,44 @@
                           <input type="hidden" name="amount" value="397.00">
                           <input type="hidden" name="currency_code" value="USD">
                           <!-- Display the payment button. -->
-                          <center><input type="image" name="submit" border="0" class="paypal_btn"
-                          src="pngkit_breakthrough-png_3399478.png"
-                          alt="Buy Now"></center>
+                          <center><div id="paypal-button-container" style="max-width: 300px;"></div></center>
                           <img alt="" border="0" width="1" height="1"
                           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
                         </form>
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <p>*By purchasing this plan, you agree that you are purchasing a subscription that is charged on a recurring yearly basis, until you cancel.</p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal_monthly" class="modal2">
+            <div class="modal2-content">
+                <div class="modal2-header">
+                    <span class="close2">&times;</span>
+                    <center><h2>Monthly Plus Membership</h2></center>
+                    <center><p><strong>Get started now!</strong></p></center>
+                </div>
+                <div class="modal2-body">
+                    <div class="modal2_body_onepayment"><p><center>Monthly Plan All Access Pass: $20</center></p></div>
+                    <div class="modal2_body_onepayment">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" enctype="application/x-www-form-urlencoded">
+                          <!-- Identify your business so that you can collect the payments. -->
+                          <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
+                          <!-- Specify a Buy Now button. -->
+                          <input type="hidden" name="cmd" value="_xclick">
+                          <!-- Specify details about the item that buyers will purchase. -->
+                          <input type="hidden" name="item_name" value="product_id_33454584">
+                          <input type="hidden" name="amount" value="20.00">
+                          <input type="hidden" name="currency_code" value="USD">
+                          <!-- Display the payment button. -->
+                          <center><div id="paypal-button-container2" style="max-width: 300px;"></div></center>
+                          <img alt="" border="0" width="1" height="1"
+                          src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+                        </form>
+                    </div>
+                </div>
+                <div class="modal2-footer">
                     <p>*By purchasing this plan, you agree that you are purchasing a subscription that is charged on a recurring yearly basis, until you cancel.</p>
                 </div>
             </div>
@@ -971,5 +1074,36 @@
               }
             }
         </script>
+        <script>
+            // Get the modal
+            var modal2 = document.getElementById("myModal_monthly");
+
+            // Get the button that opens the modal
+            var btn2 = document.getElementById("myBtn_Monthly");
+
+            // Get the <span> element that closes the modal
+            var span2 = document.getElementsByClassName("close2")[0];
+
+            // When the user clicks the button, open the modal
+            btn2.onclick = function() {
+              modal2.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span2.onclick = function() {
+              modal2.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal2.style.display = "none";
+              }
+            }
+        </script>
+        <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+
+        <script>paypal.Buttons().render('#paypal-button-container');
+        paypal.Buttons().render('#paypal-button-container2');</script>
     </body>
 </html>
