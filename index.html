@@ -525,7 +525,103 @@
                 margin-bottom: 1rem;
                 display: block;
             }
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 2;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                -webkit-animation-name: fadeIn;
+                -webkit-animation-duration: 0.4s;
+                animation-name: fadeIn;
+                animation-duration: 0.4s
+            }
+            .modal-content {
+                position: fixed;
+                bottom: 0;
+                background-color: #fefefe;
+                width: 100%;
+                -webkit-animation-name: slideIn;
+                -webkit-animation-duration: 0.4s;
+                animation-name: slideIn;
+                animation-duration: 0.4s
+            }
+            .close {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
 
+            .close:hover,
+            .close:focus {
+                color: #dc3545;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .modal-header {
+                padding: 2px 16px;
+                background-color: #010117;
+                color: white;
+                border-top: 5px solid;
+                border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 61%);
+                border-image-slice: 1;
+                --angle: 0deg;
+                animation: 4s rotate linear infinite;
+            }
+            @keyframes rotate {
+                to {
+                    --angle: 360deg;
+                    }
+                }
+                @property --angle {
+                    syntax: '<angle>';
+                    initial-value: 64deg;
+                    inherits: false;
+                }
+            .modal-body {
+                padding: 2px 16px;
+            }
+
+            .modal-footer {
+                padding: 2px 16px;
+                background-color: #010117;
+                color: white;
+            }
+            .modal-footer p{
+                font-size: 10px;
+                color: white;
+            }
+            .paypal_btn{
+                max-width: 200px;
+            }
+
+            /* Add Animation */
+            @-webkit-keyframes slideIn {
+                from {bottom: -300px; opacity: 0}
+                to {bottom: 0; opacity: 1}
+            }
+
+            @keyframes slideIn {
+                from {bottom: -300px; opacity: 0}
+                to {bottom: 0; opacity: 1}
+            }
+
+            @-webkit-keyframes fadeIn {
+                from {opacity: 0}
+                to {opacity: 1}
+            }
+
+            @keyframes fadeIn {
+                from {opacity: 0}
+                to {opacity: 1}
+            }
       </style>
     </head>
     <body>
@@ -758,20 +854,54 @@
                             <span class="pricing_price">$20</span></center><br /><br />
                             <span class="pricing_info">✔️ All Courses Except 🔥<br>✔️ Programming Courses<br>✔️ ASAP Developers Group<br>❌ All Career Bundles<br>❌ Make Money Online Courses<br><br />
                             </span>
-                            <center><a class="pricing_button" href="#">Sign Up</a></center>
+                            <center><a id="myBtn_Monthly" class="pricing_button" href="#myBtn_Monthly">Sign Up</a></center>
                         </div>
                         <div class="price_info_block_select">
                             <center><span class="pricing_title_select">Yearly</span><br />
                             <span class="pricing_price_select">$397</span></center><br /><br />
                             <span class="pricing_info_select">✔️ All Courses Plus 🔥<br>✔️ Programming Courses<br>✔️ ASAP Developers Group<br>✔️ All Career Bundles<br>✔️ Make Money Online Courses<br><br />
                             </span>
-                            <center><a class="pricing_button_select" href="#">Sign Up</a></center>
+                            <center><a id="myBtn_yearly" class="pricing_button_select" href="#myBtn_yearly">Sign Up</a></center>
                         </div>
                     </div>
                 </div>
                 <center><p class="pricing_other">Don’t want to subscribe... Just buy the <a href="#">courses</a> you need</p></center>
             </div>
         </section>
+        <div id="myModal_yearly" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <center><h2>Yearly Plus Membership</h2></center>
+                    <center><p><strong>Get started now!</strong></p></center>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_body_onepayment"><p><center>YEARLY PLUS MEMBERSHIP: $397</center></p></div>
+                    <div class="modal_body_onepayment">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" enctype="application/x-www-form-urlencoded">
+                          <!-- Identify your business so that you can collect the payments. -->
+                          <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
+                          <!-- Specify a Buy Now button. -->
+                          <input type="hidden" name="cmd" value="_xclick">
+                          <!-- Specify details about the item that buyers will purchase. -->
+                          <input type="hidden" name="item_name" value="product_id_3567584">
+                          <input type="hidden" name="amount" value="397.00">
+                          <input type="hidden" name="currency_code" value="USD">
+                          <!-- Display the payment button. -->
+                          <center><input type="image" name="submit" border="0" class="paypal_btn"
+                          src="pngkit_breakthrough-png_3399478.png"
+                          alt="Buy Now"></center>
+                          <img alt="" border="0" width="1" height="1"
+                          src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>*By purchasing this plan, you agree that you are purchasing a subscription that is charged on a recurring yearly basis, until you cancel.</p>
+                </div>
+            </div>
+        </div>
+
         <footer class="">
             <div class=" container">
                 <div class="footer_container">
@@ -812,6 +942,33 @@
                 else {
                     navbar.classList.remove("sticky");
                     }
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal_yearly");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn_yearly");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
             }
         </script>
     </body>
