@@ -5,697 +5,9 @@
       <title>Eddie Course</title>
       <meta name="description" content="Learn The Skills You Need To Become A Profitable Developer. We are the only platform that goes beyond just teaching you how to get a job.">
       <meta name="author" content="Heriberto Beard">
-      <link rel="stylesheet" href="css/styles.css?v=1.0">
+      <link rel="stylesheet" href="Styles.css">
       <style>
-            body {
-                font-family: Helvetica Neue,Helvetica,sans-serif!important;
-                margin: 0px;
-                padding: 0px;
-            }
-            div {
 
-            }
-            .logo{
-                float: left;
-                line-height: 24px;
-            }
-            .logo a{
-                margin-left: 15px;
-                text-decoration: none;
-                color: #0d6efd;
-            }
-            .logo a:hover{
-                color: #dc3545;
-            }
-            .header_menu{
-                float: right;
-                line-height: 24px;
-            }
-            .header_menu a{
-                margin-right: 15px;
-                text-decoration: none;
-                color: #0d6efd;
-            }
-            .header_menu a:hover{
-                color: #dc3545;
-            }
-
-            .navbar{
-
-            }
-            .navbar_container{
-                padding: 10px 86px 10px 86px;
-                background-color: #fff;
-                z-index: 9999;
-            }
-            .sticky {
-                  position: fixed;
-                  top: 0;
-                  width: calc(100% - 172px);
-                }
-            .sticky + .content {
-                padding-top: 60px;
-            }
-            h1{
-                font-size: 48px;
-                line-height: 59px;
-                color: #f0f0f0;
-            }
-            .title {
-
-            }
-            .desc {
-
-                font-style: italic;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 20px;
-                color: #e7e7e7;
-            }
-            .main_landing{
-                display: inline-block;
-                padding: 86px 0px 30px 0px;
-            }
-            .main_text{
-                vertical-align: top;
-                display: inline-block;
-                width: 50%;
-            }
-            .main_image{
-                display: inline-block;
-                vertical-align: top;
-                width: 40%;
-                text-align: right;
-                padding-left: 9%;
-            }
-            .main_image img{
-                vertical-align: top;
-                text-align:right;
-            }
-            section{
-                display: block;
-            }
-            .intro_container{
-
-            }
-            .intro {
-                margin-top: 30px;
-                background:linear-gradient(180deg,#38028f,rgba(109,20,255,.69)),url(jumbo-bg.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                overflow: hidden;
-                padding: 10px 101px 60px 101px;
-            }
-            .start_btn{
-                text-decoration: none;
-                color: #ffffff;
-
-                padding: 10px 40px;
-                background: #292929;
-                border: 1px solid #fff;
-                box-sizing: border-box;
-                border-radius: 5px;
-                height: 48px;
-                width: 170px;
-            }
-            .main_text a:hover{
-                color: #dc3545;
-            }
-            h2{
-                font-size: 2.5rem;
-                font-weight: 700;
-                text-align: center;
-                margin-bottom: 2rem;
-                text-transform: uppercase;
-            }
-            .container_second{
-                display: block;
-                padding: 40px 86px 40px 86px;
-            }
-            .second_landing{
-                display: inline-block;
-                padding: 15px 0px 0px 9px;
-            }
-            .career_path{
-                display: inline-block;
-                padding: 0px 0px 0px 0px;
-                vertical-align: top;
-            }
-            .career_path a{
-                text-decoration: none;
-                color: #697589;
-            }
-            .path_img{
-                background: #000;
-                width: 100%;
-                border-radius: 5px;
-                margin-bottom: 1rem;
-                -o-object-fit: cover;
-                object-fit: cover;
-                box-shadow: 0 12px 13px -6px rgb(0 0 0 / 25%);
-                display: block;
-                max-width: 300px;
-                max-height: 160px;
-            }
-            .path_title{
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                text-align: center;
-                color: #697589;
-                display: block;
-                max-width: 300px;
-            }
-            h5{
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                color: #3fc5ff;
-                margin: 0px 0px 15px 0px;
-            }
-            h4{
-                font-weight: 700;
-                font-size: 1.5rem;
-                line-height: 29px;
-                color: #fff;
-                margin: 0px;
-            }
-            .container_third{
-                display: block;
-                padding: 40px 30px 40px 86px;
-            }
-            .how_we_teach{
-                background: #1859ff;
-                display: inline-block;
-            }
-            .container_third p{
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 18px;
-                color: #d6d6d6;
-                padding: 0px 55px 0px 0px;
-            }
-            .how_we_teach_contain{
-                display: inline-block;
-                padding: 15px 5px 5px 0px;
-                vertical-align: top;
-            }
-            .how_we_img{
-                background: #000;
-                width: 100%;
-                height: 400px;
-                border-radius: 5px;
-                -o-object-fit: cover;
-                object-fit: cover;
-                box-shadow: 0 12px 13px -6px rgb(0 0 0 / 25%);
-                display: block;
-                max-width: 300px;
-            }
-            .how_we_title{
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
-                text-align: center;
-                color: #e3e3e3;
-                padding-top: 10px;
-                display: block;
-                max-width: 300px;
-            }
-            .why_choose_us{
-                background: #010117;
-                display: block;
-                overflow: hidden;
-                padding: 10px 101px 0px 101px;
-            }
-            .Why_choose_container{
-                display: block;
-                padding: 60px 0px 86px 0px;
-            }
-            svg{
-                width:100%;
-            }
-            .border_container{
-                vertical-align: top;
-                display: inline-block;
-                width: 30%;
-            }
-            .border{
-
-                position: relative;
-
-            }
-            .border::before{
-                content: '';
-                color: transparent;
-                display: inline-block;
-                border: 16px solid;
-                border-image-source: linear-gradient( 34deg,#ff0303,#8000ff 61%);
-                border-image-slice: 1;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 2;
-                vertical-align: top;
-                width: 362px;
-                height: 480px;
-            }
-            .border img{
-                position: absolute;
-                width: 362px;
-                height: 480px;
-                -o-object-fit: cover;
-                object-fit: cover;
-                top: -2rem;
-                left: 4rem;
-                z-index: 1;
-            }
-            .image{
-                display: inline-block;
-                position: relative;
-                width: 100%;
-                margin-top: 100px;
-            }
-            .why_text_container{
-                color: #fff;
-                display: inline-block;
-                vertical-align: top;
-                width: 50%;
-                padding-left: 19%;
-            }
-            .why_text{
-                padding-bottom: 100px;
-            }
-            .why_title{
-                font-size: 1.75rem;
-            }
-            .why_text ul{
-                list-style: disc;
-                color: #fff;
-                font-size: 1rem;
-            }
-            .why_text li{
-                line-height: 24px;
-                margin-bottom: 1rem;
-            }
-            .student_number{
-                font-size: 4rem;
-                font-weight: 700;
-                line-height: 1;
-                padding-bottom: 1rem;
-            }
-            .hired{
-                font-size: 1.5rem;
-                color: #fff;
-                font-weight: 400;
-                display: block;
-                text-align: center;
-
-                margin: 10px;
-            }
-            .why_image_container img{
-                max-width: 160px;
-                vertical-align: top;
-            }
-            .price_heading_container h2{
-                font-size: 32px;
-                font-weight: 700;
-                text-align: center;
-                margin-bottom: 0px;
-                margin-top: 50px;
-                text-transform: uppercase;
-                line-height: 123.1%;
-            }
-            .price_heading_container p{
-                font-weight: 400;
-                font-size: 16px;
-                color: #697589;
-                margin: 0px;
-            }
-            .price_container{
-                display: inline-block;
-            }
-            .price_block{
-                display: inline-block;
-                margin-left: 86px;
-                padding: 30px 0px 25px 220px;
-
-            }
-            .price_info_block{
-                padding: 2rem 1rem;
-                background: #fff;
-                border: 1px solid #1859ff;
-                box-sizing: border-box;
-                box-shadow: 0 12px 13px -6px rgb(0 0 0 / 25%);
-                border-radius: 5px;
-                width: 270px;
-                height: 496px;
-                display: inline-block;
-                margin-right: 1rem;
-            }
-            .pricing_title{
-                font-style: normal;
-                font-weight: 700;
-                line-height: 123.1%;
-                color: #000;
-                text-align: center;
-                font-size: 16px;
-            }
-            .pricing_price{
-                font-size: 48px;
-                padding-bottom: 20px;
-                text-align: center;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 123.1%;
-                color: #000;
-            }
-            .pricing_info{
-                font-family: Helvetica Neue;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 32px;
-                margin-bottom: 40px;
-            }
-            .price_info_block_select{
-                padding: 2rem 1rem;
-                border: 1px solid #1859ff;
-                box-sizing: border-box;
-                box-shadow: 0 12px 13px -6px rgb(0 0 0 / 25%);
-                border-radius: 5px;
-                width: 270px;
-                height: 496px;
-                display: inline-block;
-                margin-right: 1rem;
-                background: #1859ff;
-                color: #fff;
-            }
-            .pricing_title_select{
-                font-style: normal;
-                font-weight: 700;
-                line-height: 123.1%;
-                color: #fff;
-                text-align: center;
-                font-size: 16px;
-            }
-            .pricing_price_select{
-                font-size: 48px;
-                padding-bottom: 20px;
-                text-align: center;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 123.1%;
-                color: #fff;
-            }
-            .pricing_info_select{
-                font-family: Helvetica Neue;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 32px;
-                margin-bottom: 4rem;
-            }
-            .pricing_button{
-                text-decoration: none;
-                color: #ffffff;
-                margin: 20px 0px 0px 0px;
-                padding: 10px 40px;
-                background: #1859ff;
-                border: 1px solid #fff;
-                box-sizing: border-box;
-                border-radius: 5px;
-                height: 48px;
-                width: 120px;
-            }
-            .pricing_button_select{
-                text-decoration: none;
-                color: #1859ff;
-                margin: 20px 0px 0px 0px;
-                padding: 10px 40px;
-                background: #ffffff;
-                border: 1px solid #fff;
-                box-sizing: border-box;
-                border-radius: 5px;
-                height: 48px;
-                width: 120px;
-            }
-            .pricing_other{
-                font-weight: 400;
-                font-size: 16px;
-                color: #697589;
-                margin: 30px;
-            }
-            .pricing_other a{
-                text-decoration: none;
-                color: #0d6efd;
-            }
-            .pricing_other a:hover{
-                color: #dc3545;
-            }
-            .footer_container{
-                display:block;
-                background: #010117;
-                padding: 2rem 0;
-
-            }
-            .footer_one{
-                font-size: 14px;
-                line-height: 20px;
-                display:inline-block;
-                color: #fff;
-                max-width: 300px;
-                padding-left: 90px;
-                vertical-align: top;
-            }
-            .footer_two{
-                font-size: 14px;
-                line-height: 20px;
-                display:inline-block;
-                color: #fff;
-                max-width: 300px;
-                padding-left: 90px;
-                vertical-align: top;
-            }
-            .footer_three{
-                font-size: 14px;
-                line-height: 20px;
-                display:inline-block;
-                color: #fff;
-                max-width: 300px;
-                padding-left: 90px;
-                vertical-align: top;
-            }
-            .footer_four{
-                font-size: 14px;
-                line-height: 20px;
-                display:inline-block;
-                color: #fff;
-                max-width: 300px;
-                padding-left: 90px;
-                vertical-align: top;
-            }
-            .footer_two a{
-                text-decoration: none;
-                color: #fff;
-            }
-            .footer_two a:hover{
-                color: #dc3545;
-            }
-            .footer_three a{
-                text-decoration: none;
-                color: #fff;
-            }
-            .footer_three a:hover{
-                color: #dc3545;
-            }
-            .footer_four a{
-                text-decoration: none;
-                color: #fff;
-            }
-            .footer_four a:hover{
-                color: #dc3545;
-            }
-            .footer_title{
-                color: #1859FF;
-                font-weight: 700;
-                font-size: 14px;
-                margin-bottom: 1rem;
-                display: block;
-            }
-            .modal {
-                display: none;
-                position: fixed;
-                z-index: 2;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0,0.4);
-                -webkit-animation-name: fadeIn;
-                -webkit-animation-duration: 0.4s;
-                animation-name: fadeIn;
-                animation-duration: 0.4s
-            }
-            .modal-content {
-                position: fixed;
-                bottom: 0;
-                background-color: #fefefe;
-                width: 100%;
-                -webkit-animation-name: slideIn;
-                -webkit-animation-duration: 0.4s;
-                animation-name: slideIn;
-                animation-duration: 0.4s
-            }
-            .close {
-                color: white;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .close:hover,
-            .close:focus {
-                color: #dc3545;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-            .modal-header {
-                padding: 2px 16px;
-                background-color: #010117;
-                color: white;
-                border-top: 5px solid;
-                border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 61%);
-                border-image-slice: 1;
-                --angle: 0deg;
-                animation: 4s rotate linear infinite;
-            }
-            @keyframes rotate {
-                to {
-                    --angle: 360deg;
-                    }
-                }
-                @property --angle {
-                    syntax: '<angle>';
-                    initial-value: 64deg;
-                    inherits: false;
-                }
-
-            .modal-body {
-                padding: 2px 16px;
-            }
-
-            .modal-footer {
-                padding: 2px 16px;
-                background-color: #010117;
-                color: white;
-            }
-            .modal-footer p{
-                font-size: 10px;
-                color: white;
-            }
-
-            .modal2 {
-                display: none;
-                position: fixed;
-                z-index: 2;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0,0.4);
-                -webkit-animation-name: fadeIn;
-                -webkit-animation-duration: 0.4s;
-                animation-name: fadeIn;
-                animation-duration: 0.4s
-            }
-            .modal2-content {
-                position: fixed;
-                bottom: 0;
-                background-color: #fefefe;
-                width: 100%;
-                -webkit-animation-name: slideIn;
-                -webkit-animation-duration: 0.4s;
-                animation-name: slideIn;
-                animation-duration: 0.4s
-            }
-            .close2 {
-                color: white;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .close2:hover,
-            .close2:focus {
-                color: #dc3545;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-            .modal2-header {
-                padding: 2px 16px;
-                background-color: #010117;
-                color: white;
-                border-top: 5px solid;
-                border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 61%);
-                border-image-slice: 1;
-                --angle: 0deg;
-                animation: 4s rotate linear infinite;
-            }
-            @keyframes rotate {
-                to {
-                    --angle: 360deg;
-                    }
-                }
-            @property --angle {
-                syntax: '<angle>';
-                initial-value: 64deg;
-                inherits: false;
-            }
-
-            .modal2-body {
-                padding: 2px 16px;
-            }
-
-            .modal2-footer {
-                padding: 2px 16px;
-                background-color: #010117;
-                color: white;
-            }
-            .modal2-footer p{
-                font-size: 10px;
-                color: white;
-            }
-}}
-
-            /* Add Animation */
-            @-webkit-keyframes slideIn {
-                from {bottom: -300px; opacity: 0}
-                to {bottom: 0; opacity: 1}
-            }
-
-            @keyframes slideIn {
-                from {bottom: -300px; opacity: 0}
-                to {bottom: 0; opacity: 1}
-            }
-
-            @-webkit-keyframes fadeIn {
-                from {opacity: 0}
-                to {opacity: 1}
-            }
-
-            @keyframes fadeIn {
-                from {opacity: 0}
-                to {opacity: 1}
-            }
       </style>
     </head>
     <body>
@@ -738,7 +50,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="HTML email developer" src="Image/html-email-thumb.jpg" class="path_img"></a>
+                                <a href="#"><img alt="HTML email developer" src="Image/html-email-thumb.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">HTML Email Developer</a></span>
 
@@ -748,7 +60,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Frontend Developer" src="Image/frontend-thumb.jpg" class="path_img"></a>
+                                <a href="#"><img alt="Frontend Developer" src="Image/frontend-thumb.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Frontend Developer</a></span>
                         </a>
@@ -758,7 +70,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Backend Developer" src="Image/backend-thumb.jpg" class="path_img"></a>
+                                <a href="#"><img alt="Backend Developer" src="Image/backend-thumb.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Backend Developer</a></span>
                         </a>
@@ -768,7 +80,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Full Stack Developer" src="Image/fullstack-thumb.jpg" class="path_img"></a>
+                                <a href="#"><img alt="Full Stack Developer" src="Image/fullstack-thumb.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Full Stack Developer</a></span>
                         </a>
@@ -778,7 +90,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="React Developer" src="Image/reactjs.jpg" class="path_img"></a>
+                                <a href="#"><img alt="React Developer" src="Image/reactjs.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">React Developer</a></span>
                         </a>
@@ -788,7 +100,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Shopify Theme Developer" src="Image/shopify-thumb.jpg" class="path_img"></a>
+                                <a href="#"><img alt="Shopify Theme Developer" src="Image/shopify-thumb.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Shopify Theme Developer</a></span>
                         </a>
@@ -798,7 +110,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Shopify App Developer" src="Image/shopify-thumb.jpg" class="path_img"></a>
+                                <a href="#"><img alt="Shopify App Developer" src="Image/shopify-thumb.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Shopify App Developer</a></span>
                         </a>
@@ -808,7 +120,7 @@
                     <div class="career_path"
                         <a href="#">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <a href="#"><img alt="Entrepreneur Developer" src="Image/entrepreneur.jpg" class="path_img"></a>
+                                <a href="#"><img alt="Entrepreneur Developer" src="Image/entrepreneur.jpg" loading="lazy" class="path_img"></a>
                             </span>
                             <span class="path_title"><a href="#">Entrepreneur Developer</a></span>
                         </a>
@@ -827,7 +139,7 @@
                 <div class="second_landing">
                     <div class="how_we_teach_contain">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="Frontend Developer" src="Image/pexels-photo-3861964.jpeg" class="how_we_img"></a>
+                                <img alt="Frontend Developer" src="Image/pexels-photo-3861964.jpeg" loading="lazy" class="how_we_img"></a>
                             </span>
                             <span class="how_we_title">Build Real Projects</span>
                     </div>
@@ -835,7 +147,7 @@
                 <div class="second_landing">
                     <div class="how_we_teach_contain">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="Backend Developer" src="Image/pexels-photo-572056.jpeg" class="how_we_img">
+                                <img alt="Backend Developer" src="Image/pexels-photo-572056.jpeg" loading="lazy" class="how_we_img">
                             </span>
                             <span class="how_we_title">Learn How To Make Income While You Continue To Learn</span>
                     </div>
@@ -843,7 +155,7 @@
                 <div class="second_landing">
                     <div class="how_we_teach_contain">
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="Full Stack Developer" src="Image/pexels-photo-326514.jpeg" class="how_we_img"></a>
+                                <img alt="Full Stack Developer" src="Image/pexels-photo-326514.jpeg" loading="lazy" class="how_we_img"></a>
                             </span>
                             <span class="how_we_title">Build A Solid Portfolio Like A Pro</span>
                     </div>
@@ -851,7 +163,7 @@
                 <div class="second_landing">
                     <div class="how_we_teach_contain"
                             <span class="" style="background-image:;background-size:;color:transparent;display:inline-block">
-                                <img alt="React Developer" src="Image/pexels-photo-941693.jpeg" class="how_we_img"></a>
+                                <img alt="React Developer" src="Image/pexels-photo-941693.jpeg" loading="lazy" class="how_we_img"></a>
                             </span>
                             <span class="how_we_title">Land The Dream Job and Have Side Income!</span>
                     </div>
@@ -877,7 +189,7 @@
                 <div class="image">
                     <div class="border_container">
                         <div class="border" style="">
-                            <img alt="image.alt" src="Image/joe-highlight.png">
+                            <img alt="image.alt" src="Image/joe-highlight.png" loading="lazy">
                         </div>
                     </div>
                     <div class="why_text_container">
@@ -921,7 +233,7 @@
                             <span class="pricing_info">✔️ Free courses &amp; Tutorials<br>❌ Programming Courses<br>❌ ASAP Developers Group<br>❌ Career Bundles<br>❌ Make Money Online Courses<br><br />
                             </span></div>
                             <div>
-                            <center><a class="pricing_button" href="#">Sign Up</a></center></div>
+                            <center><a class="pricing_button" id="myBtn_free" href="#myBtn_free">Sign Up</a></center></div>
                         </div>
                         <div class="price_info_block">
                             <center><span class="pricing_title">Monthly</span><br />
@@ -1001,6 +313,40 @@
                 </div>
                 <div class="modal2-footer">
                     <p>*By purchasing this plan, you agree that you are purchasing a subscription that is charged on a recurring monthly basis, until you cancel.</p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal_free" class="modal2">
+            <div class="modal3-content">
+                <div class="modal3-header">
+                    <span class="close3">&times;</span>
+                    <center><h2>Free Membership</h2></center>
+                    <center><p><strong>Get started now!</strong></p></center>
+                </div>
+                <div class="modal3-body">
+                    <div class="modal3_body_onepayment"><p><center>Create an account now:</center></p></div>
+                    <div class="modal3_body_onepayment">
+                        <center><div class="rendered-form">
+                            <div class="email" style="margin-left: 32px; margin-bottom: 15px;">
+                                <label>Name:<span>*</span></label>
+                                <input type="Name" access="false" required="required" aria-required="true">
+                            </div>
+                            <div class="email" style="margin-left: 33px; margin-bottom: 15px;">
+                                <label>Email:<span>*</span></label>
+                                <input type="email" access="false" required="required" aria-required="true">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label>Password:<span>*</span></label>
+                                <input type="password" access="false" required="required" aria-required="true">
+                            </div>
+                            <div style="margin-left: 50px; margin-bottom: 15px;">
+                                <button type="submit" name="Submit" access="false" style="success">Submit</button>
+                            </div>
+                        </div></center>
+                    </div>
+                </div>
+                <div class="modal3-footer">
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -1101,8 +447,34 @@
               }
             }
         </script>
-        <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+        <script>
+            // Get the modal
+            var modal3 = document.getElementById("myModal_free");
 
+            // Get the button that opens the modal
+            var btn3 = document.getElementById("myBtn_free");
+
+            // Get the <span> element that closes the modal
+            var span3 = document.getElementsByClassName("close3")[0];
+
+            // When the user clicks the button, open the modal
+            btn3.onclick = function() {
+              modal3.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span3.onclick = function() {
+              modal3.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal3.style.display = "none";
+              }
+            }
+        </script>
+        <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
         <script>paypal.Buttons().render('#paypal-button-container');
         paypal.Buttons().render('#paypal-button-container2');</script>
     </body>
