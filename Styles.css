@@ -243,8 +243,10 @@ svg{
     color: transparent;
     display: inline-block;
     border: 16px solid;
-    border-image-source: linear-gradient( 34deg,#ff0303,#8000ff 61%);
+    border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 50%);
     border-image-slice: 1;
+    --angle: 0deg;
+    animation: 7s rotate linear infinite;
     position: absolute;
     top: 0;
     left: 0;
@@ -253,6 +255,16 @@ svg{
     width: 362px;
     height: 480px;
 }
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+        }
+    }
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 64deg;
+        inherits: false;
+    }
 .border img{
     position: absolute;
     width: 362px;
@@ -2056,8 +2068,10 @@ iPad 3
         color: transparent;
         display: inline-block;
         border: 16px solid;
-        border-image-source: linear-gradient( 34deg,#ff0303,#8000ff 61%);
+        border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 50%);
         border-image-slice: 1;
+        --angle: 0deg;
+        animation: 7s rotate linear infinite;
         position: absolute;
         top: 0;
         left: 0;
@@ -2066,6 +2080,16 @@ iPad 3
         width: 362px;
         height: 480px;
     }
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+            }
+        }
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 64deg;
+            inherits: false;
+        }
     .border img{
         position: absolute;
         width: 362px;
@@ -2825,8 +2849,10 @@ iPad 3
         color: transparent;
         display: inline-block;
         border: 16px solid;
-        border-image-source: linear-gradient( 34deg,#ff0303,#8000ff 61%);
+        border-image-source: linear-gradient( var(--angle),#ff0303,#8000ff 50%);
         border-image-slice: 1;
+        --angle: 0deg;
+        animation: 7s rotate linear infinite;
         position: absolute;
         top: 0;
         left: 0;
@@ -2835,6 +2861,16 @@ iPad 3
         width: 362px;
         height: 480px;
     }
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+            }
+        }
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 64deg;
+            inherits: false;
+        }
     .border img{
         position: absolute;
         width: 362px;
